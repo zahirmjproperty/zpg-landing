@@ -1,231 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zentra Property Group — Smarter Systems • Stronger Communities</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✦</text></svg>">
-<meta name="description" content="Zentra Property Group (ZPG) — SaaS provider for property management, agency, legal, finance, smart home, and more. One ID for every system.">
-<script src="assets/theme-boot.js"></script>
-<link rel="stylesheet" href="assets/zentra.css">
-<link rel="stylesheet" href="assets/corporate.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#061322">
+<title>ZENTRA Property Group — Enterprise SaaS for Property &amp; Beyond</title>
+<meta name="description" content="ZENTRA Property Group: 13 connected products for property and beyond. Every module is a standalone multi-tenant SaaS — one account, roles approved per system.">
+<link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<meta property="og:title" content="ZENTRA Property Group — Enterprise SaaS for Property &amp; Beyond">
+<meta property="og:description" content="13 connected products. One account. Roles approved per system.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.zentrapropertygroup.com/">
+<meta property="og:image" content="https://www.zentrapropertygroup.com/assets/brand/logo-horizontal-plate.png">
+<link rel="stylesheet" href="styles.css">
+<script defer src="config.js"></script>
+<script defer src="app.js"></script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<!-- ─── Navbar ─── -->
-<nav class="corp-nav">
-  <div class="logo">
-    <span>✦</span> Zentra<span>Property</span> <small>Group</small>
+<header class="site-header">
+  <div class="nav wrap">
+    <a class="brand" href="#top" aria-label="ZENTRA Property Group — home">
+      <img src="assets/brand/logo-horizontal-plate.png" width="1448" height="605" alt="ZENTRA Property Group">
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu</button>
+    <nav id="navigation" aria-label="Main">
+      <a href="#solutions">Solutions</a>
+      <a href="#platform">Platform</a>
+      <a href="#about">About</a>
+      <button class="button outline login" type="button">ZENTRA ID Login <span aria-hidden="true">&#8599;</span></button>
+    </nav>
   </div>
-  <div class="nav-links">
-    <a href="#products">Products</a>
-    <a href="#oneid">One ID</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <a href="https://zahirmjproperty.github.io/mockup-hartanah/zentra-id/" target="_blank" rel="noopener" class="nav-cta">Get Started</a>
-  </div>
-</nav>
+</header>
 
-<!-- ─── Hero ─── -->
-<section class="corp-hero">
-  <div class="corp-hero-inner">
-    <p class="tagline">✦ Zentra Property Group</p>
-    <h1>Smarter Systems.<br>Stronger Communities.</h1>
-    <p class="sub">
-      A unified SaaS platform for property professionals, agencies, law firms, developers, 
-      and asset managers — one identity across every system.
-    </p>
-    <div class="btn-group">
-      <a href="#products" class="btn-primary">Explore Products ↓</a>
-      <a href="https://zahirmjproperty.github.io/mockup-hartanah/zentra-id/" target="_blank" rel="noopener" class="btn-ghost">Create Your Zentra ID →</a>
-    </div>
-  </div>
-</section>
+<main id="main">
 
-<!-- ─── Stats ─── -->
-<div class="corp-stats">
-  <div><div class="stat-val">5</div><div class="stat-label">Live Systems</div></div>
-  <div><div class="stat-val">9</div><div class="stat-label">Modules Total</div></div>
-  <div><div class="stat-val">1</div><div class="stat-label">One ID</div></div>
-  <div><div class="stat-val">2024</div><div class="stat-label">Established</div></div>
-</div>
-
-<!-- ─── Products Section ─── -->
-<section class="corp-section" id="products">
-  <p class="corp-section-label">✦ Our Products</p>
-  <h2>Enterprise SaaS for Property & Beyond</h2>
-  <p class="section-sub">Every module is a standalone multi-tenant SaaS product. One account works across all — roles are approved per system.</p>
-
-  <div class="corp-products">
-
-    <!-- Zentra Asset -->
-    <div class="prod-card">
-      <a href="https://asset.zentrapropertygroup.com/" target="_blank" rel="noopener">
-        <div class="pc-icon">🏢</div>
-        <h3>Zentra Asset</h3>
-        <p class="pc-desc">Property & tenancy management — houses, buildings, factories, warehouses. Track rent, compliance, and owner reports.</p>
-        <div class="pc-status live"><span class="dot"></span> LIVE</div>
-      </a>
-    </div>
-
-    <!-- Zentra Realty -->
-    <div class="prod-card">
-      <a href="https://realty.zentrapropertygroup.com/" target="_blank" rel="noopener">
-        <div class="pc-icon">🏡</div>
-        <h3>Zentra Realty</h3>
-        <p class="pc-desc">Agency operations &amp; CRM — listings, agent hierarchy, commission tracking, and client management.</p>
-        <div class="pc-status live"><span class="dot"></span> LIVE</div>
-      </a>
-    </div>
-
-    <!-- Zentra Push -->
-    <div class="prod-card">
-      <a href="https://push.zentrapropertygroup.com/" target="_blank" rel="noopener">
-        <div class="pc-icon">📡</div>
-        <h3>Zentra Push</h3>
-        <p class="pc-desc">Listing distribution & syndication — push to portals, feeds, and social channels from one console.</p>
-        <div class="pc-status live"><span class="dot"></span> LIVE</div>
-      </a>
-    </div>
-
-    <!-- Zentra Legal -->
-    <div class="prod-card">
-      <a href="https://legal.zentrapropertygroup.com/" target="_blank" rel="noopener">
-        <div class="pc-icon">⚖️</div>
-        <h3>Zentra Legal</h3>
-        <p class="pc-desc">Law firm management SaaS — conveyancing workflow, drafting, vetting, and client matter tracking.</p>
-        <div class="pc-status live"><span class="dot"></span> LIVE</div>
-      </a>
-    </div>
-
-    <!-- Zentra Launch -->
-    <div class="prod-card">
-      <a href="https://launch.zentrapropertygroup.com/" target="_blank" rel="noopener">
-        <div class="pc-icon">🚀</div>
-        <h3>Zentra Launch</h3>
-        <p class="pc-desc">Developer new-project sales system — launch campaigns, buyer registration, and progress billing.</p>
-        <div class="pc-status live"><span class="dot"></span> LIVE</div>
-      </a>
-    </div>
-
-    <!-- Zentra Finance -->
-    <div class="prod-card">
-      <a href="https://zahirmjproperty.github.io/mockup-hartanah/zentra-design/" target="_blank" rel="noopener">
-        <div class="pc-icon">💰</div>
-        <h3>Zentra Finance</h3>
-        <p class="pc-desc">Accounting & bookkeeping SaaS — entity-level books, billing, invoice management, and financial reporting.</p>
-        <div class="pc-status coming"><span class="dot"></span> Coming Soon</div>
-      </a>
-    </div>
-
-    <!-- Zentra Home -->
-    <div class="prod-card">
-      <div class="pc-icon">🏠</div>
-      <h3>Zentra Home</h3>
-      <p class="pc-desc">Smart home & CCTV/IoT hub — property security, access control, and environmental monitoring.</p>
-      <div class="pc-status coming"><span class="dot"></span> Coming Soon</div>
-    </div>
-
-    <!-- Zentra Agri -->
-    <div class="prod-card">
-      <div class="pc-icon">🌾</div>
-      <h3>Zentra Agri</h3>
-      <p class="pc-desc">Plantation & agricultural management — crop tracking, harvest records, and land parcel oversight.</p>
-      <div class="pc-status coming"><span class="dot"></span> Coming Soon</div>
-    </div>
-
-    <!-- Zentra Space -->
-    <div class="prod-card">
-      <div class="pc-icon">🪑</div>
-      <h3>Zentra Space</h3>
-      <p class="pc-desc">Co-working space management — desk booking, membership billing, and visitor management.</p>
-      <div class="pc-status coming"><span class="dot"></span> Coming Soon</div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ─── One-ID Section ─── -->
-<section class="corp-oneid" id="oneid">
-  <div class="corp-oneid-inner">
-    <p class="corp-section-label">✦ One Identity</p>
-    <h2>Your Zentra ID Works Everywhere</h2>
-    <p class="sub">
-      One account, every ZPG system. Register once, request roles per system, 
-      and move between Asset, Realty, Legal, Finance, and more without creating 
-      a new password.
-    </p>
-    <div class="steps">
-      <div class="step">
-        <span class="num">01</span>
-        <h4>Sign Up</h4>
-        <p>Create your Zentra ID — email verification required.</p>
-      </div>
-      <div class="step">
-        <span class="num">02</span>
-        <h4>Request a Role</h4>
-        <p>Tell us which system you need. Reviewed within 1 day.</p>
-      </div>
-      <div class="step">
-        <span class="num">03</span>
-        <h4>Access Granted</h4>
-        <p>Your dashboard unlocks. Same ID, new system.</p>
-      </div>
-      <div class="step">
-        <span class="num">04</span>
-        <h4>Move Freely</h4>
-        <p>Every ZPG system accepts your Zentra ID — no second account.</p>
+  <section class="hero wrap" id="top">
+    <div class="hero-copy">
+      <p class="eyebrow">Connected enterprise solutions</p>
+      <h1>Enterprise SaaS for <span>Property &amp; Beyond</span></h1>
+      <p class="lead">Every module is a standalone multi-tenant SaaS product. One account works across all &mdash; roles are approved per system.</p>
+      <div class="actions">
+        <a class="button" href="#solutions">Explore Solutions <span aria-hidden="true">&#8595;</span></a>
+        <button class="button outline login" type="button">Sign in with ZENTRA ID</button>
       </div>
     </div>
-    <a href="https://zahirmjproperty.github.io/mockup-hartanah/zentra-id/" target="_blank" rel="noopener" class="btn-primary">Try the Prototype →</a>
-  </div>
-</section>
+    <div class="hero-art">
+      <img src="assets/hero.webp" width="1536" height="1024" alt="Illustration of the connected ZENTRA property and software ecosystem" fetchpriority="high">
+    </div>
+  </section>
 
-<!-- ─── About ─── -->
-<section class="corp-section" id="about">
-  <p class="corp-section-label">✦ About</p>
-  <h2>Built for Property Professionals<br>by Property Professionals</h2>
-  <p class="section-sub">
-    Zentra Property Group develops enterprise SaaS solutions for the Malaysian property ecosystem. 
-    Every product is built from real operational experience — not theoretical use cases.
-  </p>
-</section>
-
-<!-- ─── Footer ─── -->
-<footer class="corp-footer">
-  <div class="corp-footer-inner">
-    <div>
-      <div class="brand">✦ Zentra<span style="color:var(--gold-core)">Property</span> Group</div>
-      <p class="brand-sub">Smarter Systems • Stronger Communities.<br>
-      Enterprise SaaS for the Malaysian property industry.</p>
-    </div>
-    <div>
-      <h5>Products</h5>
-      <a href="https://asset.zentrapropertygroup.com/" target="_blank">Zentra Asset</a>
-      <a href="https://realty.zentrapropertygroup.com/" target="_blank">Zentra Realty</a>
-      <a href="https://push.zentrapropertygroup.com/" target="_blank">Zentra Push</a>
-      <a href="https://legal.zentrapropertygroup.com/" target="_blank">Zentra Legal</a>
-      <a href="https://launch.zentrapropertygroup.com/" target="_blank">Zentra Launch</a>
-    </div>
-    <div>
-      <h5>&nbsp;</h5>
-      <a href="javascript:void(0)">Zentra Finance</a>
-      <a href="javascript:void(0)">Zentra Home</a>
-      <a href="javascript:void(0)">Zentra Agri</a>
-      <a href="javascript:void(0)">Zentra Space</a>
-    </div>
-    <div>
-      <h5>Resources</h5>
-      <a href="https://zahirmjproperty.github.io/mockup-hartanah/zentra-id/" target="_blank">Zentra ID</a>
-      <a href="https://api.zahirmjproperty.com/dash-index/" target="_blank">System Status</a>
-      <a href="javascript:void(0)">Documentation</a>
-      <a href="javascript:void(0)">Contact</a>
-    </div>
+  <div class="benefits">
+    <ul class="wrap">
+      <li>Standalone SaaS</li>
+      <li>Multi-tenant architecture</li>
+      <li>One ZENTRA ID</li>
+      <li>Roles approved per system</li>
+    </ul>
   </div>
-  <div class="bottom">
-    &copy; 2026 Zentra Property Group. All rights reserved.
+
+  <section id="solutions" class="solutions wrap">
+    <div class="section-heading">
+      <p class="eyebrow">The ZENTRA ecosystem</p>
+      <h2>13 products. One connected ecosystem.</h2>
+      <p class="section-sub">Purpose-built systems for property and beyond.</p>
+    </div>
+    <div class="product-grid" id="product-grid"></div>
+
+    <article class="identity" id="platform">
+      <img src="assets/modules/id.webp" width="185" height="125" loading="lazy" alt="">
+      <div class="identity-copy">
+        <p class="eyebrow">Your connected identity</p>
+        <h2>Zentra ID</h2>
+        <h3>One account. Access by role.</h3>
+        <p>Use one account across all products. Each system approves its own roles.</p>
+      </div>
+      <button class="button login" type="button">Sign in with ZENTRA ID <span aria-hidden="true">&#8599;</span></button>
+    </article>
+  </section>
+
+  <section class="about wrap" id="about">
+    <p class="eyebrow">ZENTRA Property Group</p>
+    <h2>Built for your business.<br>Ready for what&rsquo;s next.</h2>
+    <p>Choose the standalone products your business needs, with a shared identity across the ZENTRA ecosystem.</p>
+    <a class="button" href="#solutions">Explore the Ecosystem <span aria-hidden="true">&#8593;</span></a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <a class="brand" href="#top" aria-label="ZENTRA Property Group — back to top">
+      <img src="assets/brand/logo-horizontal-plate.png" width="1448" height="605" alt="ZENTRA Property Group">
+    </a>
+    <p class="footer-tag">Enterprise SaaS for Property &amp; Beyond</p>
+    <a class="footer-site" href="https://www.zentrapropertygroup.com/">www.zentrapropertygroup.com</a>
   </div>
 </footer>
+
+<dialog id="product-dialog" aria-labelledby="dialog-title">
+  <button class="dialog-close" type="button" aria-label="Close dialog">&times;</button>
+  <p class="eyebrow">ZENTRA ecosystem</p>
+  <h2 id="dialog-title"></h2>
+  <p id="dialog-description"></p>
+  <p id="dialog-status" class="dialog-status"></p>
+  <button class="button dialog-done" type="button">Back to solutions</button>
+</dialog>
 
 </body>
 </html>

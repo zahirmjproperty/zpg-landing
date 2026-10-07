@@ -1,0 +1,21 @@
+/* ZENTRA Property Group — module registry.
+   URLs are set ONLY after live verification (HTTP check on each subdomain).
+   null = not yet reachable; the page then shows an in-page notice instead of guessing a URL. */
+window.ZENTRA_CONFIG = {
+  "loginUrl": "https://id.zentrapropertygroup.com/",
+  "products": [
+    { "id": "asset",    "name": "Zentra Asset",    "description": "Asset Management",              "url": "https://asset.zentrapropertygroup.com/" },
+    { "id": "realty",   "name": "Zentra Realty",   "description": "Real Estate Agency",            "url": "https://realty.zentrapropertygroup.com/" },
+    { "id": "legal",    "name": "Zentra Legal",    "description": "Legal Practice",                "url": "https://legal.zentrapropertygroup.com/" },
+    { "id": "finance",  "name": "Zentra Finance",  "description": "Finance & Accounting",          "url": "https://finance.zentrapropertygroup.com/" },
+    { "id": "value",    "name": "Zentra Value",    "description": "Property Valuation",            "url": "https://value.zentrapropertygroup.com/" },
+    { "id": "project",  "name": "Zentra Project",  "description": "Development Projects",          "url": "https://project.zentrapropertygroup.com/" },
+    { "id": "vr3d",     "name": "Zentra VR3D",     "description": "Immersive Property Experiences", "url": "https://vr3d.zentrapropertygroup.com/" },
+    { "id": "push",     "name": "Zentra Push",     "description": "Standalone SaaS",               "url": "https://push.zentrapropertygroup.com/" },
+    { "id": "agri",     "name": "Zentra Agri",     "description": "Agriculture & Plantation",      "url": null, "comingSoon": true },
+    { "id": "space",    "name": "Zentra Space",    "description": "Workspace Management",          "url": null, "comingSoon": true },
+    { "id": "home",     "name": "Zentra Home",     "description": "Smart Home & Surveillance",     "url": "https://home.zentrapropertygroup.com/" },
+    { "id": "contacts", "name": "Zentra Contacts", "description": "Contact Management",            "url": null, "comingSoon": true },
+    { "id": "id",       "name": "Zentra ID",       "description": "One account. Access by role.",  "url": "https://id.zentrapropertygroup.com/" }
+  ]
+};
