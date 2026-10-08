@@ -7,7 +7,7 @@ window.ZENTRA_CONFIG = {
     { "id": "asset",    "name": "Zentra Asset",    "description": "Asset Management",              "url": "https://asset.zentrapropertygroup.com/" },
     { "id": "realty",   "name": "Zentra Realty",   "description": "Real Estate Agency",            "url": "https://realty.zentrapropertygroup.com/" },
     { "id": "legal",    "name": "Zentra Legal",    "description": "Legal Practice",                "url": "https://legal.zentrapropertygroup.com/" },
-    { "id": "finance",  "name": "Zentra Finance",  "description": "Finance & Accounting",          "url": "https://finance.zentrapropertygroup.com/" },
+    { "id": "finance",  "name": "Zentra Finance",  "description": "Finance & Accounting",       "url": "https://www.zentrapropertygroup.com/finance/" },
     { "id": "value",    "name": "Zentra Value",    "description": "Property Valuation",            "url": "https://value.zentrapropertygroup.com/" },
     { "id": "project",  "name": "Zentra Project",  "description": "Development Projects",          "url": "https://project.zentrapropertygroup.com/" },
     { "id": "vr3d",     "name": "Zentra VR3D",     "description": "Immersive Property Experiences", "url": "https://vr3d.zentrapropertygroup.com/" },
