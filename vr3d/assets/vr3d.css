@@ -1,0 +1,217 @@
+/* ZENTRA VR3D — module landing page
+   Extends the ZPG corporate design system (base.css) with the module palette:
+   navy #061322 · cyan #26d8f5 · gold #d9b577 */
+
+/* ─── Hero additions ─── */
+.hero { min-height: 560px; }
+
+.live-pill {
+  display: inline-flex; align-items: center; gap: 9px;
+  margin-top: 26px; padding: 7px 15px 7px 12px;
+  border: 1px solid var(--border); border-radius: 999px;
+  background: rgba(10, 32, 51, .6);
+  color: var(--muted); font-size: 12px; font-weight: 600; letter-spacing: .3px;
+}
+.live-pill .dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: #43b02a; box-shadow: 0 0 10px rgba(67, 176, 42, .9);
+}
+
+/* ─── Hero console (composed visual) ─── */
+.hero-art { position: relative; }
+.fin-console {
+  position: relative; overflow: hidden;
+  border: 1px solid var(--border); border-radius: var(--radius);
+  background: linear-gradient(150deg, #0c2338 0%, #061322 82%);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, .45), var(--lift, 0 0 0 transparent);
+  padding: 22px 22px 20px;
+}
+.fin-console::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(circle at 82% 6%, rgba(38, 216, 245, .16) 0%, transparent 58%);
+}
+.fc-head {
+  display: flex; align-items: center; gap: 11px;
+  padding-bottom: 15px; margin-bottom: 16px;
+  border-bottom: 1px solid var(--border-soft);
+}
+.fc-head img { width: 34px; height: 34px; border-radius: 9px; object-fit: cover; }
+.fc-head b { font-size: 14.5px; font-weight: 700; letter-spacing: -.2px; }
+.fc-head span { margin-left: auto; font-size: 10.5px; font-weight: 700; letter-spacing: 1.3px; color: var(--cyan); text-transform: uppercase; }
+
+.fc-kpis { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; margin-bottom: 16px; }
+.fc-kpi {
+  padding: 12px 14px; border: 1px solid var(--border-soft); border-radius: 11px;
+  background: rgba(6, 19, 34, .55);
+}
+.fc-kpi i { display: block; font-style: normal; font-size: 10.5px; font-weight: 700; letter-spacing: 1.1px; text-transform: uppercase; color: var(--muted); }
+.fc-kpi b { display: block; margin-top: 5px; font-size: 19px; font-weight: 800; letter-spacing: -.6px; color: var(--text); }
+.fc-kpi b.gold { color: var(--gold); }
+
+.fc-figure { margin: 0; }
+.fc-figure img {
+  display: block; width: 100%; height: auto; aspect-ratio: 1360 / 1255;
+  border-radius: 10px; border: 1px solid var(--border-soft);
+  background: #04101c;
+}
+
+/* ─── Feature cards ─── */
+.card-icon {
+  display: grid; place-items: center;
+  height: 92px; color: var(--cyan);
+  border-bottom: 1px solid var(--border-soft);
+  background: linear-gradient(160deg, rgba(38, 216, 245, .07) 0%, transparent 72%);
+}
+.card-icon svg { width: 38px; height: 38px; }
+.product:hover .card-icon { color: var(--gold); }
+.product .card-desc { margin-bottom: 14px; }
+.product .text-button { cursor: default; }
+
+/* ─── Benefits strip alignment (base sets margin:0 which breaks .wrap centering) ─── */
+.benefits ul { margin-inline: auto; }
+
+/* ─── Reports band ─── */
+.reports {
+  border-block: 1px solid var(--border-soft);
+  background: var(--bg-soft);
+  padding-block: 84px;
+}
+.reports h2 { max-width: 640px; margin-bottom: 44px; }
+.report-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.report {
+  padding: 26px 24px; border: 1px solid var(--border-soft); border-radius: 13px;
+  background: rgba(6, 19, 34, .5);
+  transition: border-color .2s, transform .2s;
+}
+.report:hover { border-color: var(--cyan); transform: translateY(-3px); }
+.report h4 { margin: 0 0 9px; font-size: 16.5px; font-weight: 700; letter-spacing: -.2px; }
+.report p { margin: 0; font-size: 14px; color: var(--muted); }
+
+/* ─── Identity panel (finance variant) ─── */
+.identity { margin-top: 22px; }
+
+/* ─── Sign in ─── */
+.signin { padding-block: 84px; }
+.signin-panel {
+  display: grid; grid-template-columns: 1fr 1.15fr;
+  gap: 40px; align-items: start;
+  padding: 38px; border: 1px solid var(--border); border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--panel) 0%, #071829 100%);
+}
+.signin-copy h2 { margin-bottom: 14px; }
+.signin-copy p { margin: 0; color: var(--muted); font-size: 15px; }
+.signin-options { display: grid; gap: 14px; }
+.signin-option {
+  display: flex; flex-direction: column; align-items: flex-start;
+  padding: 20px; border: 1px solid var(--border-soft); border-radius: 13px;
+  background: rgba(6, 19, 34, .55);
+}
+.signin-option.is-primary { border-color: rgba(38, 216, 245, .45); }
+.signin-option b { font-size: 15px; font-weight: 700; letter-spacing: -.2px; }
+.signin-option i {
+  margin: 5px 0 16px; font-style: normal;
+  font-size: 13px; color: var(--muted);
+}
+.signin-option .button { width: 100%; }
+.signin-note {
+  grid-column: 1 / -1; margin: 4px 0 0; padding-top: 20px;
+  border-top: 1px solid var(--border-soft);
+  font-size: 13px; color: var(--muted);
+}
+
+/* ─── Ecosystem band ─── */
+.ecosystem {
+  border-block: 1px solid var(--border-soft);
+  background: var(--bg-soft);
+  padding-block: 84px;
+}
+.ecosystem .section-heading { max-width: 780px; margin-bottom: 44px; }
+.eco-grid {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px; row-gap: 22px;
+}
+.eco {
+  display: flex; flex-direction: column;
+  border: 1px solid var(--border-soft); border-radius: 13px;
+  background: rgba(6, 19, 34, .5);
+  overflow: hidden;
+  transition: transform .2s, border-color .2s;
+}
+.eco:hover { transform: translateY(-3px); border-color: var(--cyan); }
+.eco img {
+  width: 100%; aspect-ratio: 226 / 140; object-fit: cover;
+  border-bottom: 1px solid var(--border-soft);
+}
+.eco b { padding: 13px 14px 2px; font-size: 14px; font-weight: 700; letter-spacing: -.2px; }
+.eco i {
+  padding: 0 14px 15px; font-style: normal;
+  font-size: 11.5px; color: var(--muted);
+}
+.eco-note {
+  margin: 26px 0 0; padding-top: 22px;
+  border-top: 1px solid var(--border-soft);
+  font-size: 14px; color: var(--muted);
+}
+
+/* ─── Current module marker (Finance on its own page) ─── */
+.eco.is-current { border-color: rgba(38, 216, 245, .45); }
+.eco.is-current b { color: var(--cyan); }
+.eco-live {
+  display: inline-block; margin-left: 7px; padding: 2px 7px;
+  border: 1px solid rgba(67, 176, 42, .6); border-radius: 999px;
+  color: #6fd45a; font-size: 9.5px; font-weight: 700;
+  letter-spacing: 1.1px; text-transform: uppercase;
+  vertical-align: 1px;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 1000px) {
+  .report-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .eco-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .signin-panel { grid-template-columns: 1fr; gap: 28px; }
+}
+@media (max-width: 760px) {
+  .hero { min-height: 0; }
+  .fin-console { padding: 18px 16px 16px; }
+  .fc-kpi b { font-size: 17px; }
+  .reports { padding-block: 56px; }
+  .report-grid { grid-template-columns: 1fr; gap: 14px; }
+  .report { padding: 20px; }
+  .signin { padding-block: 56px; }
+  .signin-panel { padding: 24px; }
+  .signin-option { padding: 18px; }
+  .ecosystem { padding-block: 56px; }
+  .eco-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; row-gap: 16px; }
+  .eco b { font-size: 13px; padding: 11px 12px 2px; }
+  .eco i { font-size: 11px; padding: 0 12px 12px; }
+}
+@media (max-width: 380px) {
+  .fc-kpis { grid-template-columns: 1fr; }
+}
+
+/* ─── Tour cards (VR3D-specific) ─── */
+.tour-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.tour-card {
+  display: flex; flex-direction: column; gap: 5px;
+  padding: 22px 22px 20px;
+  border: 1px solid var(--border-soft); border-radius: 13px;
+  background: rgba(6, 19, 34, .5);
+  text-decoration: none; color: inherit;
+  transition: border-color .2s, transform .2s;
+}
+.tour-card:hover { border-color: var(--cyan); transform: translateY(-3px); }
+.tour-card b { font-size: 16px; font-weight: 700; letter-spacing: -.2px; }
+.tour-card i { font-style: normal; font-size: 13.5px; color: var(--muted); }
+.tour-card span {
+  margin-top: 12px; align-self: flex-start;
+  padding: 4px 11px; border-radius: 999px;
+  border: 1px solid var(--border); background: rgba(38, 216, 245, .08);
+  font-size: 11.5px; font-weight: 700; letter-spacing: .3px; color: var(--cyan);
+}
+
+@media (max-width: 1024px) { .tour-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px)  { .tour-grid { grid-template-columns: 1fr; gap: 14px; } }
