@@ -50,7 +50,7 @@
 
 .fc-figure { margin: 0; }
 .fc-figure img {
-  display: block; width: 100%; height: auto; aspect-ratio: 1312 / 816;
+  display: block; width: 100%; height: auto; aspect-ratio: 1360 / 1063;
   border-radius: 10px; border: 1px solid var(--border-soft);
   background: #04101c;
 }
