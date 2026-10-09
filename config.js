@@ -5,7 +5,7 @@ window.ZENTRA_CONFIG = {
   "loginUrl": "https://id.zentrapropertygroup.com/",
   "products": [
     { "id": "asset",    "name": "Zentra Asset",    "description": "Asset Management",              "url": "https://www.zentrapropertygroup.com/asset/" },
-    { "id": "realty",   "name": "Zentra Realty",   "description": "Real Estate Agency",            "url": "https://realty.zentrapropertygroup.com/" },
+    { "id": "realty",   "name": "Zentra Realty",   "description": "Agent Management",            "url": "https://www.zentrapropertygroup.com/realty/" },
     { "id": "legal",    "name": "Zentra Legal",    "description": "Legal Practice",                "url": "https://www.zentrapropertygroup.com/legal/" },
     { "id": "finance",  "name": "Zentra Finance",  "description": "Finance & Accounting",       "url": "https://www.zentrapropertygroup.com/finance/" },
     { "id": "value",    "name": "Zentra Value",    "description": "Property Valuation",            "url": "https://www.zentrapropertygroup.com/value/" },
