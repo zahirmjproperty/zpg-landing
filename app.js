@@ -48,6 +48,16 @@ cards.forEach(function (product) {
   desc.className = 'card-desc';
   desc.textContent = product.description;
 
+  if (product.internal) {
+    const badge = document.createElement('span');
+    badge.className = 'badge-soon';
+    badge.textContent = 'Internal · Sign-in';
+    body.append(h3, badge, desc);
+    article.append(img, body);
+    grid.appendChild(article);
+    return;
+  }
+
   if (product.comingSoon) {
     article.classList.add('is-coming-soon');
     const badge = document.createElement('span');

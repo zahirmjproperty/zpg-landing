@@ -16,6 +16,7 @@ window.ZENTRA_CONFIG = {
     { "id": "space",    "name": "Zentra Space",    "description": "Workspace Management",          "url": "https://www.zentrapropertygroup.com/space/" },
     { "id": "home",     "name": "Zentra Home",     "description": "Smart Home & Surveillance",     "url": "https://home.zentrapropertygroup.com/" },
     { "id": "contacts", "name": "Zentra Contacts", "description": "Contact Management",            "url": null, "comingSoon": true },
+    { "id": "search",   "name": "Zentra Search",   "description": "Public Social Intelligence",     "url": "https://search.zentrapropertygroup.com/", "internal": true },
     { "id": "id",       "name": "Zentra ID",       "description": "One account. Access by role.",  "url": "https://id.zentrapropertygroup.com/" }
   ]
 };
