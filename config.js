@@ -11,6 +11,7 @@ window.ZENTRA_CONFIG = {
     { "id": "value",    "name": "Zentra Value",    "description": "Property Valuation",            "url": "https://www.zentrapropertygroup.com/value/" },
     { "id": "project",  "name": "Zentra Project",  "description": "Development Projects",          "url": "https://www.zentrapropertygroup.com/project/" },
     { "id": "vr3d",     "name": "Zentra VR3D",     "description": "Immersive Property Experiences", "url": "https://www.zentrapropertygroup.com/vr3d/" },
+    { "id": "mapping",  "name": "Zentra Mapping",  "description": "Property Listings on a Map",    "url": "https://www.zentrapropertygroup.com/mapping/" },
     { "id": "push",     "name": "Zentra Push",     "description": "Standalone SaaS",               "url": "https://push.zentrapropertygroup.com/" },
     { "id": "agri",     "name": "Zentra Agri",     "description": "Agriculture & Plantation",      "url": null, "comingSoon": true },
     { "id": "space",    "name": "Zentra Space",    "description": "Workspace Management",          "url": "https://www.zentrapropertygroup.com/space/" },
